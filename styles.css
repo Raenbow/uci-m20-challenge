@@ -14,7 +14,7 @@ h1 {
 .coffeeSizeList {
     list-style: none;
 }
-.card {
+.carousel {
     min-height: 100%;
     box-shadow:
     0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -24,6 +24,9 @@ h1 {
     0 41.8px 33.4px rgba(0, 0, 0, 0.086),
     0 100px 80px rgba(0, 0, 0, 0.12);
     border: 0;
+}
+.carouselInfo {
+    flex-direction: column;
 }
 .card-footer {
     border-top: 0;
@@ -53,6 +56,16 @@ li dd {
 
 
 @media (min-width: 992px) {
+    .carouselInfo {
+        justify-content: center;
+    }
+    .card-body {
+        flex-grow: 0;
+    }
+    .card-body p {
+        margin: 1rem;
+    }
+
     .productHeader, .productDescription, .productDetails {
         max-width: 65%;
     }
