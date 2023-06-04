@@ -1,0 +1,62 @@
+/* this style keeps the Gulp logo from taking over the whole page. Adjust if needed to size correctly for your page. */
+
+nav img, nav .img-fluid {
+    max-width: 150px;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+.productHeader {
+    margin-top: 1rem;
+}
+
+.coffeeSizeList {
+    list-style: none;
+}
+.card {
+    min-height: 100%;
+    box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+    border: 0;
+}
+.card-footer {
+    border-top: 0;
+    background-color: #fff;
+}
+.card-footer button {
+    margin-bottom: .75rem;
+}
+
+.productImage {
+    max-width: 95%;
+    margin: 1rem 0 1rem 0;
+}
+.productDescription {
+    margin-top: 1rem;
+}
+li dd {
+    margin-bottom: 0;
+}
+.productAction {
+    max-width: fit-content;
+}
+.productAction button {
+    padding: 8px 50px;
+    margin-top: 1rem;
+}
+
+
+@media (min-width: 992px) {
+    .productHeader, .productDescription, .productDetails {
+        max-width: 65%;
+    }
+    .productImage {
+        max-width: 50%;
+    }
+}
